@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Online Portfolio</div>
+    <nav>
+      <ul>
+        <li><a onclick="showSection('about')">About Me</a></li>
+        <li><a onclick="showSection('skills')">Skills</a></li>
+        <li><a onclick="showSection('projects')">Projects</a></li>
+        <li><a onclick="showSection('experience')">Experience</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About (default visible) -->
+  <section id="about" class="about active">
+    <div class="about-img">
+      <!--<img src="me2.jpeg" alt="My Profile">-->
+    </div>
+   
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I have successfully completed my B.Tech graduation and built a strong foundation in computer science.
+        I am very eager to start my career in the software industry and contribute to meaningful projects.
+        Passion for technology drives me to keep learning and improving my skills every day.
+        I believe in following functionality and delivering work with dedication and commitment.  
+      </p>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+ <center>
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>DSA</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <!--<img src="rfid.jpeg" width="100" height="300" alt="Project Screenshot">-->
+      <h3>Smart Attendance System Using RFID</h3>
+      <p>A simple project to take attendance for professors or students without wasting time.</p>
+    </div>
+    <div class="project-card">
+      <!--<img src="project2.png" alt="Project Screenshot">-->
+      <h3>Emotion and Autism Detection By Facial Recognition</h3>
+      <p>A Machine Learning model to detect emotions and autism using facial recognition.</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="exp-item">
+      <h3>National Institute of Technology - NIT Warangal</h3>
+      <p>2025 - Internship student, worked on learning and creating machine learning models on IoT devices.</p>
+    </div>
+    <div class="exp-item">
+      <h3>Industrial Training</h3>
+      <p>Worked as a trainee under service managers of IT department and learned about different types of protocols.</p>
+      <p>Experience with transfer of data between different sectors of coal mines through OFC cables, installation and working of CCTV cameras.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sirajmohammad@example.com</p>
+    <p>Phone: (555) 123-4567</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 sirajmohammad. All rights reserved.</p>
+  </footer>
+  </center>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
