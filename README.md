@@ -6,4 +6,6 @@ I am a Computer Science student pursuing BTech in CSM at kakatiya instituite of 
 HTML5
 CSS3 (Flexbox, Grid)
 # Getting Started
-To run this project locally, simply clone the repository and open index.html in your browser: git clone
+To run this project locally, simply clone the repository and open index.html in your browser: git clonehttps://github.com/mohammedsiraj907/My-Portfolio.git
+# Deployment
+This portfolio site is ideal for hosting on platforms like GitHub Pages, Netlify, or Vercel for easy sharing and professional presentation.
